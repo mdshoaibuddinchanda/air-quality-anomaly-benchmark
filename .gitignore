@@ -1,0 +1,57 @@
+# GitHub clean push policy
+# Ignore data, model artifacts, and generated outputs.
+
+# Project data and outputs
+data/
+errors/
+
+# Error artifacts anywhere in the project
+**/errors/
+**/errors/**
+*error*.csv
+*error*.json
+*error*.npy
+
+# Model and array artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Generated figures and reports
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.pdf
+
+# Generated analysis artifacts (outside data/)
+tables/
+figures/
+images/
+plots/
+reports/
+results/
+artifacts/
+outputs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor and environment
+.vscode/
+.venv/
+venv/
+env/
+
+# Requested markdown files to keep out of git
+project_scope.md
+dataset_verification.md
+progress.md
